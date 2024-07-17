@@ -1,0 +1,34 @@
+.user-details {
+  text-align: left;
+}
+
+.user-details h2 {
+  margin-top: 0;
+  color: #262626;
+}
+
+.user-details p {
+  margin: 5px 0;
+  color: #4b4b4b;
+}
+
+.images{ 
+  border-radius: 50%;
+  height:50px;
+  width:60px
+}
+.user-details button {
+  background-color: #3897f0;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-top: 5px;
+  transition: background-color 0.3s;
+}
+
+.user-details button:hover {
+  background-color: #2878c6;
+}

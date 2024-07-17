@@ -7,7 +7,7 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/social-media-data')
+    fetch('https://social-media-dashborad.onrender.com/api/social-media-data')
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);

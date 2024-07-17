@@ -1,14 +1,13 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const PORT = 5000;
+const port = process.env.PORT || 5000;
 
 
 const corsOptions = {
-  origin: 'http://localhost:5173', 
-  optionsSuccessStatus: 200 
+  origin: '*', 
+  optionsSuccessStatus: 200
 };
-
 app.use(cors(corsOptions));
 
 // Dummy data
@@ -312,6 +311,6 @@ app.get('/api/social-media-data', (req, res) => {
   res.json(students);
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
 });
